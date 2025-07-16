@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>С Днём Рождения, Сора!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa&display=swap');
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Comfortaa', cursive;
+      background: linear-gradient(to right, #ffe2f2, #ffeaf8);
+      color: #4b2b47;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #d94da0;
+      font-family: 'Pacifico', cursive;
+      margin-top: 20px;
+      text-shadow: 1px 1px 6px #ffc6dd;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 750px;
+      margin: 12px auto;
+    }
+
+    ul {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      padding-left: 20px;
+      list-style-type: '🌸 ';
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.65);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 850px;
+      box-shadow: 0 0 15px rgba(220, 132, 180, 0.3);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.5rem;
+      font-family: 'Pacifico', cursive;
+      color: #d65599;
+    }
+
+    .magic-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: #ff9dcf;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .magic-btn:hover {
+      background: #e989bd;
+      transform: scale(1.05);
+    }
+
+    /* Звёздочки */
+    .star {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+      z-index: 999;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>С Днём Рождения, Сора! 🎉</h1>
+
+<div class="section">
+  <p style="text-align:center;"><strong>Моя дорогая интернет-подруга 💻💗</strong></p>
+  <p>Ты пришла в мою жизнь случайно, но осталась в ней как настоящее сокровище. Даже через экран ты умеешь быть рядом, поддерживать, вдохновлять и радовать. Спасибо тебе за это!</p>
+</div>
+
+<div class="section">
+  <h2 style="text-align:center; color:#c04299;">10 причин, почему я тебя люблю 🥰</h2>
+  <ul>
+    <li>Потому что ты рядом, даже если далеко.</li>
+    <li>С тобой можно говорить о чём угодно — и это будет весело.</li>
+    <li>Ты умеешь поддерживать, как никто другой.</li>
+    <li>Ты искренняя. Всегда. Это очень ценно.</li>
+    <li>Твои сообщения — как лучик тепла в день.</li>
+    <li>Мы смеёмся над странными штуками, и только мы это понимаем 😹.</li>
+    <li>Ты даёшь ощущение, что я не одна.</li>
+    <li>Я могу быть собой с тобой, и это невероятно приятно.</li>
+    <li>Ты вдохновляешь меня быть лучше каждый день.</li>
+    <li>Просто потому что ты — это ты. И я тебя люблю 💗</li>
+  </ul>
+</div>
+
+<div class="section">
+  <p><strong>Сорочка, милая моя звёздочка ✨</strong></p>
+  <p>Спасибо, что ты появилась в моей жизни. Даже если между нами экраны и километры — ты осталась настоящей, тёплой и важной для меня частью каждого дня.</p>
+  <p>Пусть в твоей жизни будет как можно больше света, радости, вдохновения, музыки, котиков и всего, что делает тебя счастливой. А если вдруг станет грустно — знай, я всегда рядом (в одном сообщении от тебя 💌).</p>
+  <p>Ты невероятная. Я ценю тебя и нашу дружбу. С Днём Рождения, Сора!</p>
+</div>
+
+<button class="magic-btn" onclick="alert('💖 Ты только что получила виртуальное объятие от Стуни!')">
+  Нажми, если ты моя звёздочка ✨
+</button>
+
+<div class="footer">С любовью, твоя Стуня 🫶🏻</div>
+
+<audio autoplay loop hidden>
+  <source src="https://dl.sndup.net/vw2r/strykalo-bespolezno.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+// Падающие звёзды
+for (let i = 0; i < 50; i++) {
+  const star = document.createElement('div');
+  star.classList.add('star');
+  star.style.left = Math.random() * 100 + 'vw';
+  star.style.top = Math.random() * 100 + 'vh';
+  star.style.animationDuration = (1 + Math.random() * 3) + 's';
+  document.body.appendChild(star);
+}
+</script>
+
+</body>
+</html>
